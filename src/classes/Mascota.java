@@ -14,6 +14,12 @@ public class Mascota {
         this.edad = edad;
     }
 
+    public Mascota() {
+        
+    }
+    
+    
+
     public String getNombre() {
         return nombre;
     }
