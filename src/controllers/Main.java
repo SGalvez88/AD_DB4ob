@@ -21,10 +21,16 @@ public class Main {
 //        insert.insert();
 //        
 //        System.out.println("Base de datos creada");
-
+//
           Lectura lectura = new Lectura();
           
           lectura.LecturaDatos();
+
+//            Modificar modificar = new Modificar();
+//            
+//            modificar.modificarDatos();
+          
+          
         
       
     }

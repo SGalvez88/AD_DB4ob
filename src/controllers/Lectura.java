@@ -18,7 +18,9 @@ public class Lectura {
         ObjectSet<Mascota> result = dataBase.queryByExample(mascota);
         
         if (result.isEmpty()) {
-            System.out.println("No existen registros personas");
+            
+            System.out.println("No existen registros mascotas");
+            
         } else {
             System.out.println("El número de registro es: " + result.size());
 
@@ -28,7 +30,7 @@ public class Lectura {
                         + ", Edad: " + mascotaSiguiente.getEdad());
             }
         }
-           
+          
         dataBase.close();
     }
 
