@@ -3,19 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ad_db4o;
+package controllers;
 
-/**
- *
- * @author IFC
- */
-public class AD_DB4o {
+public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
+        
+        
+      
     }
     
 }
