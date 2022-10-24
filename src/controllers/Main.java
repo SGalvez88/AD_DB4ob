@@ -16,11 +16,15 @@ public class Main {
 
     public static void main(String[] args) {
      
-        Insertar insert = new Insertar();
-        
-        insert.insert();
-        
-        System.out.println("Base de datos creada");
+//        Insertar insert = new Insertar();
+//        
+//        insert.insert();
+//        
+//        System.out.println("Base de datos creada");
+
+          Lectura lectura = new Lectura();
+          
+          lectura.LecturaDatos();
         
       
     }
