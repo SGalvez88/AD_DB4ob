@@ -43,6 +43,11 @@ public class Mascota {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+
+    @Override
+    public String toString() {
+        return "Mascota{" + "nombre=" + nombre + ", raza=" + raza + ", edad=" + edad + '}';
+    }
     
     
     
