@@ -69,15 +69,20 @@ public class MainAsociarClases {
 
         ObjectContainer dataBase = Db4oEmbedded.openFile(Db4oEmbedded.newConfiguration(), BDMascotas);
         System.out.println("obteniendo mascota....");
+        /*query*/
         Mascota mascotaChester = new Mascota("Chester", null, 0);
+        
+        Mascota mascotaModificada = null;
 
         ObjectSet<Mascota> resultMascota = dataBase.queryByExample(mascotaChester);
+        
+//        if(resultMascota.size()){}
 
         if (resultMascota.isEmpty()) {
             System.out.println("No existen registros mascotas");
         } else {
 
-            Mascota mascotaModificada = (Mascota) resultMascota.next();
+            mascotaModificada = (Mascota) resultMascota.next();
 
             System.out.println("El número de registro es: " + resultMascota.size());
             
@@ -97,7 +102,7 @@ public class MainAsociarClases {
             Persona personaModificada = (Persona) resultPersona.next();
             System.out.println("El número de registro es: " + resultPersona.size());
 
-            personaModificada.getMascotas().add(mascotaChester);
+            personaModificada.getMascotas().add(mascotaModificada);
 
             dataBase.store(personaModificada);
             System.out.println("Datos modificados correctamente");

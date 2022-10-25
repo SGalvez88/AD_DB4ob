@@ -7,6 +7,7 @@ public class Persona {
     
     private int id;
     private ArrayList<Mascota> mascotas = new ArrayList<>();
+    
 
     public Persona() {
     }
